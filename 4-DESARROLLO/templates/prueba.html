@@ -1,4 +1,7 @@
-<img src="../static/images/cpsi.png"><hr>
+{% extends "base.html" %}
+{% block content %}
+<!-- <img src="{{url_for('static',filename='images/cpsi.png')}}"><hr>
+ -->
 {% if N==0 %}
 Nivel 0
 {% endif %}
@@ -6,8 +9,17 @@ Nivel 0
 Nivel 1
 {% endif %}
 {% if N==2 %}
-Nivel 2
+<br>
+<div class="sena" style="width:60%">
+<button class="sena-btns">Enviar Datos</button>
+</div>
 {% endif %}
 {% if N==3 %}
-Nivel 3
+
+<p class="sena-sombra">SERVICIO NACIONAL DE APRENDIZAJE</p>
+<hr>
+<div >
+<button class="btn btn-outline-primary"><i class="fa fa-file"></i>&nbsp;OK</button>
+</div>
 {% endif %}
+{%endblock%}

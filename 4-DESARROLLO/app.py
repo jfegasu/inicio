@@ -12,6 +12,6 @@ def Nivel():
     kk1="Teleinormatica"
     
     b=[1,4,5,6]
-    return render_template("prueba.html",N=3)
+    return render_template("prueba.html",N=2)
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
